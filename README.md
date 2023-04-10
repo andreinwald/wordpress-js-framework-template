@@ -1,6 +1,6 @@
 # Skeleton for creating Wordpress template using modern JS frameworks like React, Vue, Angular
 
-# Installation
+## Installation
 1. Download Wodpress code from site or install via docker
 
 2. Create frontend app in themes folder
@@ -20,3 +20,5 @@ npm run build
 ```
 
 5. Choose your new theme in Wordpress admin panel (Appearance -> Themes)
+
+**Thats it! Now you can open your wordpress site and see JS Framework page!**
