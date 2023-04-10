@@ -13,4 +13,9 @@ npx create-react-app react-theme
 # or
 vue create vue-theme
 ```
-3. copy files from this repo to that theme folder
+3. Copy files from this repo to that theme folder
+
+4. Build everything to build folder
+```shell
+npm run build
+```
