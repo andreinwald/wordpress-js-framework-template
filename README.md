@@ -1,5 +1,4 @@
-# Wordpress Javascript Framework Template
-Skeleton for creating Wordpress template using modern JS frameworks like React, Vue, Angular
+# Skeleton for creating Wordpress template using modern JS frameworks like React, Vue, Angular
 
 # Installation
 1. Download Wodpress code from site or install via docker
