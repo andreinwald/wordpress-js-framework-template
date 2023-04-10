@@ -18,3 +18,5 @@ vue create vue-theme
 ```shell
 npm run build
 ```
+
+5. Choose your new theme in Wordpress admin panel (Appearance -> Themes)
