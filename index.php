@@ -1,3 +1,15 @@
+<?php
+$assetManifest = json_decode(file_get_contents(__DIR__ . '/build/asset-manifest.json'), true);
+$stylesFile = $assetManifest['files']['main.css'];
+$scriptsFile = $assetManifest['files']['main.js'];
+
+register_nav_menus(
+    array(
+        'primary' => 'Primary menu',
+    )
+);
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,12 +18,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title><?php wp_title('|', true, 'right'); ?></title>
     <?php wp_head(); ?>
-    <script defer="defer" src="<?php echo get_template_directory_uri() ?>/build/static/js/main.68afa4bf.js"></script>
-    <link href="<?php echo get_template_directory_uri() ?>/build/static/css/main.073c9b0a.css" rel="stylesheet">
+    <script defer="defer" src="<?php echo $scriptsFile ?>"></script>
+    <link href="<?php echo $stylesFile ?>" rel="stylesheet">
 </head>
 <body>
 
-<noscript>You need to enable JavaScript to run this app.</noscript>
 <div id="root"></div>
 
 <?php wp_footer(); ?>
