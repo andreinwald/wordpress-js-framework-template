@@ -22,3 +22,7 @@ npm run build
 5. Choose your new theme in Wordpress admin panel (Appearance -> Themes)
 
 **Thats it! Now you can open your wordpress site and see JS Framework page!**
+
+
+--------
+Make sure that you running npm/npx/yarn commands in your theme folder, not in wordpress root one.
