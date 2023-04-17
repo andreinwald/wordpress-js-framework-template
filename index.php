@@ -9,10 +9,19 @@ $wpOptions = wp_load_alloptions();
 foreach (['admin_email', 'mailserver_url', 'mailserver_login', 'mailserver_pass', 'rewrite_rules', 'wp_user_roles', 'cron'] as $option) {
     unset($wpOptions[$option]);
 }
+$routes = [];
+foreach (get_pages() as $page) {
+    $routes['pages'][] = $page->post_name;
+}
+foreach (get_posts() as $post) {
+    $routes['posts'][] = $post->post_name;
+}
 $wpVariables = [
+    'routes' => $routes,
     'options' => $wpOptions,
     'template_directory_uri' => get_template_directory_uri(),
 ];
+
 ?>
 <!DOCTYPE html>
 <html>
