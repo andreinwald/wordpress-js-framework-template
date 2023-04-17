@@ -1,4 +1,6 @@
 # Skeleton for creating Wordpress template using modern JS frameworks like React, Vue, Angular
+<img src="screenshots/file_structure.png" height="300">
+
 - Installation
 - Problems with Javascript in wordpress plugins
 - How to use Contact Form 7 plugin
